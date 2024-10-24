@@ -8,18 +8,7 @@ def encode_password(password):
     return encoded_password
 
 
-def decode_password(encoded_pass):
-	decoded_list = []
-	decoded_string = ""
-	
-	for character in encoded_pass:
-		decoded_list.append(int(character) - 3)
-	for item in decoded_list:
-		if item < 0:
-			decoded_string += str(item+10)
-		else:
-			decoded_string += str(item)
-	return decoded_string
+
 
 
 while True:
